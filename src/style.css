@@ -1,0 +1,49 @@
+:root {
+  font-size: 30px;
+  background-color: var(--primary);
+  --primary: #CCD5DB;
+  --secondary: #5F616B;
+  --tertiary: gray;
+}
+
+body {
+  font-size: 20px;
+}
+
+.body-div {
+  padding: 1%;
+}
+
+.nav-list {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 80px;
+
+}
+
+.nav-list li {
+  color: white;
+  padding: 15px;
+}
+
+.nav-list li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer {
+  background-color: var(--secondary);
+  display: flex;
+  justify-content: flex-end;
+
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer img {
+  max-width: 40px;
+  padding: 10px;
+}

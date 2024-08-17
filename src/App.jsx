@@ -1,16 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './style.css'
+import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [tab, setTab] = useState("About");
+
+  const changeTab = (tab) => {
+    setTab(tab)
+  }
 
   return (
     <>
-      <div>
+      <NavBar />
 
+      <div className="body-div">
+        <p>helllo</p>
       </div>
+
+      <Footer/>
+
     </>
   )
 }
