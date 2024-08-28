@@ -1,14 +1,12 @@
-
-
-function NavBar({ onTabChange}){
+function NavBar({ onTabChange }){
 
     return (
         <>
         <nav>
             <ul className = "nav-list">
-                <li>About</li>
-                <li>Experiences</li>
-                <li>Projects</li>
+                <li onClick={() => onTabChange("About")}>About</li>
+                <li onClick={() => onTabChange("Experiences")}>Experiences</li>
+                <li onClick={() => onTabChange("Projects")}>Projects</li>
             </ul>
         </nav>
         </>
